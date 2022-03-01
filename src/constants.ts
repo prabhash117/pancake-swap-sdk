@@ -5,7 +5,7 @@ export type BigintIsh = JSBI | number | string
 
 export enum ChainId {
   MAINNET = 56,
-  TESTNET = 97
+  BSCTESTNET = 97
 }
 
 export enum TradeType {
@@ -23,14 +23,14 @@ export const FACTORY_ADDRESS = '0xcA143Ce32Fe78f1f7019d7d551a6402fC5350c73'
 
 export const FACTORY_ADDRESS_MAP = {
   [ChainId.MAINNET]: FACTORY_ADDRESS,
-  [ChainId.TESTNET]: '0xB7926C0430Afb07AA7DEfDE6DA862aE0Bde767bc'
+  [ChainId.BSCTESTNET]: '0xB7926C0430Afb07AA7DEfDE6DA862aE0Bde767bc'
 }
 
 export const INIT_CODE_HASH = '0x00fb7f630766e6a796048ea87d01acd3068e8ff67d078148a3fa3f4a84f69bd5'
 
 export const INIT_CODE_HASH_MAP = {
   [ChainId.MAINNET]: INIT_CODE_HASH,
-  [ChainId.TESTNET]: 'ecba335299a6693cb2ebc4782e74669b84290b6378ea3a3873c7231a8d7d1074'
+  [ChainId.BSCTESTNET]: 'ecba335299a6693cb2ebc4782e74669b84290b6378ea3a3873c7231a8d7d1074'
 }
 
 export const MINIMUM_LIQUIDITY = JSBI.BigInt(1000)
